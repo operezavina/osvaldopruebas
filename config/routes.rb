@@ -1,4 +1,5 @@
 Osvaldopruebas::Application.routes.draw do
+  resources :users
   get "users/new"
   get "static_pages/home"
   match '/signup', to: 'users#new', via: 'get'
